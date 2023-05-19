@@ -1,0 +1,17 @@
+.badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.25rem;
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 3rem;
+  background-color: var(--bg-badge-color);
+
+  & span {
+    margin: 0 0.5rem;
+    font-size: small;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    white-space: nowrap;
+  }
+}

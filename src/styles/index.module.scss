@@ -1,0 +1,29 @@
+.banner {
+  padding: 4rem 0;
+  max-width: 900px;
+
+  & h1 {
+    font-size: 3rem;
+    font-weight: 800;
+    line-height: 4rem;
+  }
+
+  & p {
+    margin: 2rem 0;
+  }
+
+  & a {
+    display: inline-block;
+    color: var(--bg-color);
+    font-weight: 800;
+    padding: 0.8rem 2rem;
+    border-radius: 3rem;
+    background-color: var(--fg-color);
+  }
+
+  & .badges {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 3rem;
+  }
+}

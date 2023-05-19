@@ -1,0 +1,29 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@400;700;800&display=swap");
+
+html {
+  font-family: "Manrope", sans-serif !important;
+}
+
+// https://tailwindcss.com/docs/customizing-colors
+$slate-100: #f1f5f9;
+$slate-900: #0f172a;
+$neutral-100: #f5f5f5;
+$neutral-800: #262626;
+
+:root {
+  --fg-color: #{$slate-900};
+  --bg-color: #{$slate-100};
+  --bg-badge-color: #{$neutral-100};
+}
+
+.dark {
+  --fg-color: #{$slate-100};
+  --bg-color: #{$slate-900};
+  --bg-badge-color: #{$neutral-800};
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: 800;
+  margin-left: 4px;
+}
