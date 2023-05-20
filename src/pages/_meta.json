@@ -5,5 +5,9 @@
       "layout": "full"
     },
     "type": "page"
+  },
+  "docs": {
+    "type": "page",
+    "title": "Learn"
   }
 }

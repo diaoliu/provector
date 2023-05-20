@@ -16,6 +16,7 @@ const logo = (
 
 const themeConfig = {
   logo,
+  docsRepositoryBase: "https://github.com/diaoliu/provector/blob/main",
   project: {
     link: "https://github.com/diaoliu/provector",
   },
