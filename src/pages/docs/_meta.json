@@ -1,4 +1,23 @@
 {
   "index": "Introduction",
-  "tools": "Tools"
+  "-- Objects": {
+    "type": "separator",
+    "title": "Objects"
+  },
+  "text": "Text",
+  "image": "Image",
+  "-- Design": {
+    "type": "separator",
+    "title": "Design"
+  },
+  "select-objects": "Select Objects",
+  "arrange-objects": "Arrange Objects",
+  "object-snaps": "Object Snaps",
+  "appearance": "Appearance",
+  "-- Reference": {
+    "type": "separator",
+    "title": "Reference"
+  },
+  "tools": "Tools",
+  "keyboard-shortcuts": "Keyboard Shortcuts"
 }
