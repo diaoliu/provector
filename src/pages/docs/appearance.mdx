@@ -1,1 +1,136 @@
+import { Callout, Steps } from "nextra-theme-docs";
+
 # Appearance
+
+## Blend Modes
+
+Blend Modes determine how two layers or objects are combined or blended together to create a final result. Each blend mode has its own algorithm or formula that determines how the colors of the underlying layer interact with the layer above it.
+
+Provector supports following blend modes:
+
+- **Normal**: The default blend mode where the pixels of the top layer completely replace the pixels of the underlying layer.
+- **Multiply**: The pixels of the top layer are multiplied with the corresponding pixels of the underlying layer, resulting in a darker image.
+- **Darken**: This blend mode compares each RGB color chanel and selects the darker value as resulting color.
+- **Lighten**: The exact inverse operation of Darken blend mode.
+- **Colo Burn**: The effect of Color Burn mode is similar to the Multiply blend mode, but it produces more intense and saturated results.
+- **Screen**: The inverse operation of Multiply. The pixels of the top layer are inverted, multiplied with the underlying layer, and then inverted again, resulting in a lighter image.
+- **Color Dodge**: The colors of the underlying layer are brightened to reflect the colors of the top layer, resulting in a lighter image with increased contrast.
+- **Overlay**: This blend mode combines Multiply and Screen. It darkens the underlying image where the top layer is darker, and lightens it where the top layer is lighter.
+- **Soft Light**: Soft Light mode is a softer version of the Overlay mode without the harsh contrast. It preserves the overall colors and tones of the underlying layer while subtly modifying its appearance. It can be used to add a touch of warmth, softness, or atmospheric effects.
+- **Hard Light**: Hard Light mode can be used to add a sense of drama, enhance contrast, and create bold lighting effects.
+- **Difference**: This blend mode subtracts the color values of the top layer from the corresponding color values of the underlying layer, resulting in the absolute difference between the two.
+- **Exclusion**: This blend mode creates similar effect than the Difference mode but resulting in a softer output with less contrast.
+- **Hue**: The Hue blend mode creates a color with the hue of the top layer and the saturation and luminance of the underlying layer.
+- **Saturation**:The Saturation blend mode creates a color with the saturation of the top layer and the hue and luminance of the underlying layer.
+- **Color**: The Color blend mode creates a color with the hue and saturation of the top layer and the luminance of the underlying layer.
+- **Luminosity**: The Luminosity blend mode creates a color with the luminance of the top layer and the hue and saturation of the underlying layer.
+
+## Opacity
+
+Opacity is represented as an attribute that can be adjusted for individual objects, like paths, layers, or groups of objects. The opacity value is usually expressed as a percentage, ranging from 0% (completely transparent) to 100% (completely opaque). It refers to the level of transparency or the degree to which an object or element allows other objects or elements to show through it.
+
+<Callout type="info">
+  Opacity affects the entire object uniformly, including its fill color, stroke,
+  and any applied effects.
+</Callout>
+
+## Fill Color
+
+Open color picker in the fill panel to apply fill color or gradient to the selected paths and texts or current project (default fill color for the new objects).
+
+<Steps>
+
+### Open Color Picker
+
+Click the swatch with HEX code value in the fill panel.
+
+### Choose a Color Model
+
+RGB (Red, Green, Blue), HSL (Hue, Saturation, Lightness) or HEX Code.
+
+### Adjust Brightness and Saturation
+
+Click or drag the white circle in the color palette.
+
+### Adjust Hue
+
+Drag the white circle in hue slider below the palette.
+
+### Adjust Opacity
+
+Drag the white circle in the opacity slider below the hue slider.
+
+### Picker a Color in Canvas
+
+Click eyedropper button to open eyedropper tool, press any key to dismiss it.
+
+</Steps>
+
+## Gradient
+
+Gradient is a smooth transition between two or more color stops.
+
+<Steps>
+
+### Select a Gradient Type
+
+Select Linear or Radial Gradient in the color picker.
+
+### Define Starting and Ending Point
+
+Drag the starting or ending handle of the gradient tool to set its position.
+
+### Edit Color Stops
+
+A series of color stops to define the color and its offset in the gradient.
+
+- Click an a blank point in the gradient slider to add a color stop.
+- Click an a stop circle in the gradient slider to select a color stop.
+- Enter percentage in offset field or drag a stop circle to adjust the offset.
+- Click trash button to remove the selected color stop.
+
+</Steps>
+
+## Stroke Color
+
+Open color picker in the stroke panel to apply stroke color to the selected paths and texts.
+
+## Stroke Weight
+
+Use stroke weight field in the stroke panel to enter weight which represents the thickness of a stroke.
+
+## Stroke Align
+
+Select stroke align in the stroke panel, it describes how a stroke is aligned along the path.
+
+- **Center**: The stroke is evenly distributed on both sides of the path.
+- **Inside**: The stroke is positioned entirely inside the path.
+- **Outside**: The stroke is positioned entirely outside the path.
+
+<Callout type="warning">
+  This property is not exported to SVG and not supported in in any modern
+  browser, see [W3C
+  Specification](https://drafts.fxtf.org/fill-stroke-3/#propdef-stroke-align).
+</Callout>
+
+## Stroke Dash/Gap
+
+Go to the stroke panel and enter the length for creating dashed or dotted stroke. It consists of a series of values that represent the length of the dashes and gaps in the pattern (dash-gap-dash-gap).
+
+## Stroke Cap
+
+In the stroke panel, use stroke cap options to choose how the ends of a stroked line or path are rendered. It determines the appearance of the endpoints of a stroked path.
+
+- **Butt Cap**: This is the default cap style. It creates a flat endpoint that is perpendicular to the direction of the line. The stroke ends exactly at the endpoint of the path.
+
+- **Round Cap**: This cap style adds a semicircular extension beyond the endpoint of the path. It creates a rounded endpoint. The radius of the arc is equal to half the thickness of the stroke.
+
+- **Square Cap**: This cap style adds a rectangular extension beyond the endpoint of the path. It creates a squared-off or flat endpoint. The length of the square is equal to half the thickness of the stroke.
+
+## Stroke Join
+
+In the stroke panel, use stroke join options to choose how the corners or angles between two connected line segments or curves are rendered. It determines the appearance of the junction where two lines meet.
+
+- **Miter Join**: This is the default join style. It creates a sharp or pointed corner at the junction of two lines. The outer edges of the stroke extend to meet at the miter point. The length of the miter can vary based on the angle of the corner.
+- **Round Join**: This join style creates a smooth, curved corner at the junction of two lines. The corner is rounded by adding a circular arc that connects the two segments. The radius of the arc is determined by the thickness of the stroke.
+- **Bevel Join**: This join style creates a flat, chamfered corner at the junction of two lines. The corner is beveled by adding a straight line segment that connects the two segments. The length of the bevel can be adjusted based on the stroke thickness.
