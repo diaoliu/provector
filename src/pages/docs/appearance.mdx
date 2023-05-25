@@ -1,5 +1,14 @@
 import { Callout, Steps } from "nextra-theme-docs";
 
+import icons from "icons/icons";
+import InlineIcon from "icons/inline-icon";
+import IconCapButt from "icons/icon-cap-butt";
+import IconCapRound from "icons/icon-cap-round";
+import IconCapSquare from "icons/icon-cap-square";
+import IconJoinBevel from "icons/icon-join-bevel";
+import IconJoinMiter from "icons/icon-join-miter";
+import IconJoinRound from "icons/icon-join-round";
+
 # Appearance
 
 ## Blend Modes
@@ -29,7 +38,7 @@ Provector supports following blend modes:
 
 Opacity is represented as an attribute that can be adjusted for individual objects, like paths, layers, or groups of objects. The opacity value is usually expressed as a percentage, ranging from 0% (completely transparent) to 100% (completely opaque). It refers to the level of transparency or the degree to which an object or element allows other objects or elements to show through it.
 
-<Callout type="info">
+<Callout>
   Opacity affects the entire object uniformly, including its fill color, stroke,
   and any applied effects.
 </Callout>
@@ -97,7 +106,7 @@ Open color picker in the stroke panel to apply stroke color to the selected path
 
 ## Stroke Weight
 
-Use stroke weight field in the stroke panel to enter weight which represents the thickness of a stroke.
+Use stroke weight <InlineIcon d={icons.strokeWeight} /> field in the stroke panel to enter weight which represents the thickness of a stroke.
 
 ## Stroke Align
 
@@ -115,22 +124,20 @@ Select stroke align in the stroke panel, it describes how a stroke is aligned al
 
 ## Stroke Dash/Gap
 
-Go to the stroke panel and enter the length for creating dashed or dotted stroke. It consists of a series of values that represent the length of the dashes and gaps in the pattern (dash-gap-dash-gap).
+Go to the stroke style <InlineIcon d={icons.strokeStyle} /> field in the stroke panel and enter the length for creating dashed or dotted stroke. It consists of a series of values that represent the length of the dashes and gaps in the pattern (dash-gap-dash-gap).
 
 ## Stroke Cap
 
 In the stroke panel, use stroke cap options to choose how the ends of a stroked line or path are rendered. It determines the appearance of the endpoints of a stroked path.
 
-- **Butt Cap**: This is the default cap style. It creates a flat endpoint that is perpendicular to the direction of the line. The stroke ends exactly at the endpoint of the path.
-
-- **Round Cap**: This cap style adds a semicircular extension beyond the endpoint of the path. It creates a rounded endpoint. The radius of the arc is equal to half the thickness of the stroke.
-
-- **Square Cap**: This cap style adds a rectangular extension beyond the endpoint of the path. It creates a squared-off or flat endpoint. The length of the square is equal to half the thickness of the stroke.
+- **<IconCapButt /> Butt Cap**: This is the default cap style. It creates a flat endpoint that is perpendicular to the direction of the line. The stroke ends exactly at the endpoint of the path.
+- **<IconCapRound /> Round Cap**: This cap style adds a semicircular extension beyond the endpoint of the path. It creates a rounded endpoint. The radius of the arc is equal to half the thickness of the stroke.
+- **<IconCapSquare /> Square Cap**: This cap style adds a rectangular extension beyond the endpoint of the path. It creates a squared-off or flat endpoint. The length of the square is equal to half the thickness of the stroke.
 
 ## Stroke Join
 
 In the stroke panel, use stroke join options to choose how the corners or angles between two connected line segments or curves are rendered. It determines the appearance of the junction where two lines meet.
 
-- **Miter Join**: This is the default join style. It creates a sharp or pointed corner at the junction of two lines. The outer edges of the stroke extend to meet at the miter point. The length of the miter can vary based on the angle of the corner.
-- **Round Join**: This join style creates a smooth, curved corner at the junction of two lines. The corner is rounded by adding a circular arc that connects the two segments. The radius of the arc is determined by the thickness of the stroke.
-- **Bevel Join**: This join style creates a flat, chamfered corner at the junction of two lines. The corner is beveled by adding a straight line segment that connects the two segments. The length of the bevel can be adjusted based on the stroke thickness.
+- **<IconJoinMiter /> Miter Join**: This is the default join style. It creates a sharp or pointed corner at the junction of two lines. The outer edges of the stroke extend to meet at the miter point. The length of the miter can vary based on the angle of the corner.
+- **<IconJoinRound /> Round Join**: This join style creates a smooth, curved corner at the junction of two lines. The corner is rounded by adding a circular arc that connects the two segments. The radius of the arc is determined by the thickness of the stroke.
+- **<IconJoinBevel /> Bevel Join**: This join style creates a flat, chamfered corner at the junction of two lines. The corner is beveled by adding a straight line segment that connects the two segments. The length of the bevel can be adjusted based on the stroke thickness.

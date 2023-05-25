@@ -1,1 +1,163 @@
+import { Callout } from "nextra-theme-docs";
+
+import icons from "icons/icons";
+import InlineIcon from "icons/inline-icon";
+import IconSpacing from "icons/icon-spacing";
+
 # Arrange Objects
+
+## Align and Distribute Objects
+
+Select at least one object, go to the align panel in the right sidebar, you will see following options:
+
+- <InlineIcon d={icons.alignTop} /> Align Top
+- <InlineIcon d={icons.alignMiddle} /> Align Middle
+- <InlineIcon d={icons.alignBottom} /> Align Bottom
+- <InlineIcon d={icons.alignLeft} /> Align Left
+- <InlineIcon d={icons.alignCenter} /> Align Center
+- <InlineIcon d={icons.alignRight} /> Align Right
+- <InlineIcon d={icons.distributeHorizontal} /> Horizontal Distribute objects evenly
+- <InlineIcon d={icons.distributeVertical} /> Vertical Distribute objects evenly
+
+Click an option to align or distribute the selection.
+
+- Align single object relative to the frame it belongs to.
+- Align or distribute multiple objects relative to the bounding box.
+
+## Align and Distribute Anchor Points
+
+Select at least one anchor point, click an option in the the align panel to align or distribute the selected anchor points.
+
+## Transform Objects
+
+Select one or more objects you want to transform, you will notice bounding box handles around it. These handles are used to manipulate the size, position and rotation.
+
+### Move Objects
+
+To move objects you can either:
+
+- Click and drag objects.
+- In the transform panel, enter a new value in <kbd>x</kbd> or <kbd>y</kbd> field to move objects precisely.
+
+<Callout>
+**Modifier Keys**
+
+- <kbd>Alt/Option</kbd> Move and duplicate objects.
+- <kbd>Shift</kbd> Move the objects along x or y axis.
+</Callout>
+
+### Scale Objects
+
+To scale objects you can either:
+
+- Click and drag any of the side of bounding box.
+- In the transform panel, enter a new value in width <kbd>w</kbd> or height <kbd>h</kbd> field to scale objects precisely.
+
+<Callout>
+**Modifier Keys**
+
+- <kbd>Alt/Option</kbd> Scale objects relative to the bounding box center.
+- <kbd>Shift</kbd> Scale the objects proportionally (maintaining its aspect ratio).
+</Callout>
+
+### Rotate Objects
+
+To rotate objects you can either:
+
+- Click and drag any of the corner of bounding box.
+- In the transform panel, enter a new degree in rotation <kbd>r</kbd> field to rotate objects precisely.
+
+<Callout>
+**Modifier Keys**
+
+- <kbd>Alt/Option</kbd> Rotate and duplicate objects.
+- <kbd>Shift</kbd> Rotate the objects in 15° intervals.
+</Callout>
+
+## Flip Objects
+
+Select at least one object, in the transform panel in the right sidebar, click one of following buttons:
+
+- <InlineIcon d={icons.flipAlong} /> Flip Along
+- <InlineIcon d={icons.flipAcross} /> Flip Across
+
+## Adjust Spacing
+
+Select at least two objects, in the spacing panel in the right sidebar, enter new spacing between objects in one of following fields:
+
+- <IconSpacing rotate={90} /> Horizontal Spacing
+- <IconSpacing /> Vertical Spacing
+
+## Stack Objects
+
+### Bring to Front
+
+Select one or more objects, do one of the following:
+
+- Press <kbd>]</kbd>
+- Go to Menu > Object > Bring to Front.
+- Right click the selection to open Context Menu > Bring to Front.
+
+The selected objects will be moved all the way to the front of the stacking order in its group or frame.
+
+### Bring Forward
+
+Select one or more objects, do one of the following:
+
+- Press <kbd>ctrl/command + ]</kbd>
+- Go to Menu > Object > Bring to Front.
+- Right click the selection to open Context Menu > Bring to Front.
+
+The selected objects will be moved one step closer to the front of the stacking order in its group or frame.
+
+### Bring Backward
+
+Select one or more objects, do one of the following:
+
+- Press <kbd>ctrl/command + [</kbd>
+- Go to Menu > Object > Bring Backward.
+- Right click the selection to open Context Menu > Bring Backward.
+
+The selected objects will be moved one step closer to the bottom of the stacking order in its group or frame..
+
+### Bring to Back
+
+Select one or more objects, do one of the following:
+
+- Press <kbd>[</kbd>
+- Go to Menu > Object > Bring to Back.
+- Right click the selection to open Context Menu > Bring to Back.
+
+Move the selected objects all the way to the bottom of the stacking order in its group or frame.
+
+## Group Objects
+
+Select at least two objects, group selection in few ways:
+
+- Press <kbd>ctrl/command + g</kbd>
+- Go to Menu > Object > Group.
+- Right click the selection to open Context Menu > Group.
+
+## Create Clipping Mask
+
+Select one or more objects and one path as clipping mask, then clip the underlying objects in few ways:
+
+- Press <kbd>ctrl/command + m</kbd>
+- Go to Menu > Object > Make Mask.
+- Right click the selection to open Context Menu > Make Mask.
+
+## Lock/Unlock Objects
+
+Select one or more objects, then lock or unlock the selection in few ways:
+
+- Press <kbd>ctrl/command + l</kbd>
+- Go to Menu > Object > Lock/Unlock.
+- Right click the selection to open Context Menu > Lock/Unlock.
+
+## Show/Hide Objects
+
+Select one or more objects, then show or hide the selection in few ways:
+
+- Press <kbd>ctrl/command + h</kbd>
+- Go to Menu > Object > Show/Hide.
+- Right click the selection to open Context Menu > Show/Hide.

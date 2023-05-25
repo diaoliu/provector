@@ -4,6 +4,8 @@
     "type": "separator",
     "title": "Objects"
   },
+  "frame": "Frame",
+  "path": "Path",
   "text": "Text",
   "image": "Image",
   "-- Design": {
