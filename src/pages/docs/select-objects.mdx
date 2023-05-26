@@ -1,19 +1,87 @@
+import { Steps } from "nextra-theme-docs";
+
+import icons from "icons/icons";
+import InlineIcon from "icons/inline-icon";
+
 # Select Objects
 
-## Select Single Object
+## Select Objects with the Selection Tool
 
-## Select Multiple Objects
+<Steps>
 
-## Select Single Anchor Point
+### Active the Selection Tool
 
-## Select Multiple Anchor Points
+Click the Selection Tool <InlineIcon d={icons.selection} /> from the toolbar on the left side of the screen.
 
-## Select Objects within a Group
+### Select one or more Objects
+
+- **Select Single Object**: click on the object.
+- **Select Multiple Objects**: click and drag a selection marquee (bounding box) around the objects.
+
+### Add or Remove Objects
+
+Hold down the <kbd>shift</kbd> while clicking on the objects or dragging a rectangular selection.
+
+### Deselect All Objects
+
+Click on an empty area of the canvas.
+
+</Steps>
+
+## Select Objects with the Layers panel
+
+1. Click the layers button in the top of the right sidebar to open the layers panel.
+2. Click an object to select it from the layers.
+
+## Select Anchor Points with the Direct Selection Tool
+
+<Steps>
+
+### Active the Direct Selection Tool
+
+Click the Direct Selection Tool <InlineIcon d={icons.directSelection} /> from the toolbar on the left side of the screen.
+
+### Select one or more Anchor Points
+
+- **Select Single Point**: click on the anchor point.
+- **Select Multiple Points**: click and drag a selection marquee (bounding box) around the points.
+
+### Add or Remove Anchor Points
+
+Hold down the <kbd>shift</kbd> while clicking on the points or dragging a rectangular selection.
+
+### Deselect All Points
+
+Click on an empty area of the canvas.
+
+</Steps>
+
+## Select Objects within a Group or Clipping Mask
+
+Double click a group to enter the group and select individual objects within it.
 
 ## Select All
 
-## Unselect All
+Do one following to select all objects in the document:
+
+- <kbd>ctrl/command + a</kbd>
+- Select Menubar > Select > All.
 
 ## Select Same
 
+1. Select one object with the desired appearance attribute (e.g., stroke weight, opacity, blending mode, etc.).
+2. Select Menubar > Select > Same, then select one of following attribute:
+   - Blending Mode
+   - Opacity
+   - Fill Color
+   - Stroke Color
+   - Stroke Weight
+   - Font
+
 ## Select Type
+
+Select Menubar > Select > Object, then select one of following type:
+
+- Stray Points
+- Clipping Masks
+- Text Objects
