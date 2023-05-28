@@ -1,13 +1,93 @@
+import { Callout } from "nextra-theme-docs";
+
+import icons from "icons/icons";
+import InlineIcon from "icons/inline-icon";
+
 # Text
 
-## Local Fonts
+## Create texts
 
-## Google Web Fonts
+### Create Point Texts
 
-## Font Size
+1. Click the type tool <InlineIcon d={icons.text} /> in the toolbar.
+2. Position your cursor where you want to start your text and click on the canvas.
+3. Begin typing the desired text. You can adjust the font size and other text styles in the text panel in the right sidebar.
 
-## Font Weight
+### Create Area Texts
 
-## Leading
+1. Click the type tool <InlineIcon d={icons.text} /> in the toolbar.
+2. Click and drag to create a text box on the canvas. This defines the area where your text will be contained.
+3. Click inside the text box and start typing your desired text. The text will automatically wrap within the boundaries of the text box.
+
+## Text Styles
+
+### Font Family
+
+To open the list of available font families, click on the font family dropdown on the top of the text panel, there are two collections of typefaces:
+
+1. **Local Fonts**: These are locally installed fonts in your computer. Choose the "Local Fonts" tab in the font family picker, then click the "Allow" button to let the browser access the local fonts.
+2. **Google Web Fonts**: A wide range of open-source web fonts provided by [Google](https://fonts.google.com/). Your need an internet connection to load the google fonts.
+
+<Callout>
+  If you want to use locally installed fonts, please using the latest **Google
+  Chrome** or **Microsoft Edge**, more info under [MDN
+  Docs](https://developer.mozilla.org/en-US/docs/Web/API/Local_Font_Access_API)
+  about the Local Font Acess API.
+</Callout>
+
+### Font Size
+
+Use the font size field next to the font family picker to adjust the scaling of the text.
+
+### Font Weight
+
+Click the font weight dropdown in the text panel to choose a new weight from the following numerical values:
+
+- 100 Thin
+- 200 Extra Light (Ultra Light)
+- 300 Light
+- 400 Normal
+- 500 Medium
+- 600 Semi Bold
+- 700 Bold
+- 800 Extra Bold (Ultra Bold)
+- 900 Black (Heavy)
+
+<Callout>
+  The available font weights will depend on the specific font family you have
+  selected.
+</Callout>
+
+### Leading
+
+Leading is also known as line spacing or line height. Leading determines the distance between baselines of two adjacent lines of a text. Do one of the following to adjust the leading:
+
+- Enter a new value in the leading field <InlineIcon d={icons.leading} /> in the text panel.
+- Leading will be automatically adjusted while changing the font size.
+
+## Paragraph
+
+### Text Alignment
+
+To change the text alignment within a text box, click one of the following options on the bottom of the text panel.
+
+- <InlineIcon d={icons.textLeft} /> Align Left
+- <InlineIcon d={icons.textCenter} /> Align Center
+- <InlineIcon d={icons.textRight} /> Align Right
+- <InlineIcon d={icons.textTop} /> Align Top
+- <InlineIcon d={icons.textMiddle} /> Align Middle
+- <InlineIcon d={icons.textBottom} /> Align Bottom
+
+### Line Wrap
+
+- <InlineIcon d={icons.autoWidth} /> **Auto Width**: line wrapping will be not applied
+  to the selected texts.
+- <InlineIcon d={icons.autoHeight} /> **Auth Height**: the lines of the text will
+  be wrapped within its boundaries, the height will be automatically adapted to the
+  text content.
+- <InlineIcon d={icons.fixedSize} /> **Fixed Size**: similar to the auth height option,
+  but the height will be not changed while changing the text content.
 
 ## Create Outlines
+
+If you want to convert a text into a vector shape, select the text and go to Menubar > Object > Type > Create Outlines. This converts the text into editable vector paths.
