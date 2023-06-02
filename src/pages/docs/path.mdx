@@ -1,45 +1,239 @@
+import { Callout, Step } from "nextra-theme-docs";
+
+import icons from "icons/icons";
+import InlineIcon from "icons/inline-icon";
+
 # Path
+
+## What is Path
+
+The path object contains a sequence of connected anchor points, which are joined by cubic bezier curves (straight or curved segments) .
+
+Here are a few key aspects of paths:
+
+- **Anchor Points**: the starting and ending points of the curve segments.
+- **Bezier Handles**: the control points determine the tangent and curvature of the curve segments.
+- **Curve Segments**: these are the bezier curves that connect the anchor points.
 
 ## Draw Basic Shapes
 
 ### Line
 
+1. Select the line tool in the toolbar or press <kbd>\\</kbd>.
+2. Click once on the canvas where you want start a line.
+3. Hold down the mouse button and move your cursor to a point where you want stop the line.
+4. Release the mouse button to create the line.
+
+<Callout>
+**Modifier Keys**
+
+- <kbd>shift</kbd> constrain the line to a straight angle (horizontal, vertical, or 45 degrees).
+</Callout>
+
 ### Arc
+
+1. Select the arc tool in the toolbar.
+2. Click on the canvas where you want start a arc.
+3. Hold down the mouse button and move your cursor to a point where you want stop the arc.
+4. Release the mouse button and click again at another point to define the curvature of the arc and create the arc.
 
 ### Rectangle
 
+1. Select the rectangle tool in the toolbar or press <kbd>m</kbd>.
+2. Click on the canvas to define the starting point of the rectangle.
+3. Hold down the mouse button and move your cursor to define the size of the rectangle.
+4. Release the mouse button to create the rectangle.
+
+<Callout>
+**Modifier Keys**
+
+- <kbd>shift</kbd> create a square.
+- <kbd>alt/option</kbd> create a rectangle or square from the center.
+</Callout>
+
 ### Ellipse
+
+1. Select the ellipse tool in the toolbar or press <kbd>l</kbd>.
+2. Click and drag a bounding box to define the position and size of the ellipse.
+3. Release the mouse button to create the ellipse.
+
+<Callout>
+**Modifier Keys**
+
+- <kbd>shift</kbd> create a circle.
+- <kbd>alt/option</kbd> create an ellipse or circle from the center.
+</Callout>
 
 ### Polygon
 
+1. Select the polygon tool in the toolbar or press <kbd>y</kbd>.
+2. In the polygon panel, you can adjust the number of sides of the polygon.
+3. Click on the canvas to define the center of the polygon.
+4. Hold down the mouse button and move your cursor to define the radius of the polygon.
+5. Release the mouse button to create the polygon.
+
 ### Star
 
-## Draw Path
+1. Select the star tool in the toolbar or press <kbd>s</kbd>.
+2. In the polygon panel, you can adjust the number of sides and ratio between inner and outer radius of the star.
+3. Do the same as drawing a polygon.
 
-### Draw a new Path
+## Draw Paths with the Pen Tool
 
-### Insert an Point
+1. Select the pen tool in the toolbar or press <kbd>p</kbd>.
+2. Click on a blank area in the canvas to create the first anchor point.
+3. To create a curved segment, hold down the mouse button and drag away from the anchor point.
+4. Release the mouse button to create the bezier handle.
+5. Move your cursor to a point where your want to add the next anchor point.
+6. Repeat the steps above to add more anchor points to the path.
+7. To close the path, click the first anchor point to close it.
+8. To finish drawing the path, press <kbd>ctrl/command</kbd> and click on the blank area of the canvas.
 
-### Remove an Point
+## Edit Paths with the Pen Tool
 
-### Close a Path
+Select the pen tool in the toolbar or press <kbd>p</kbd>.
 
-### Continue Drawing a Path
+### Insert or Delete Anchor Points
 
-## Draw Shape with Shape Builder
+1. Hover your cursor over a selected path.
+2. Click the curve segments of the path to add new anchor points.
+3. Click the anchor points of the path to remove them from the path.
+
+<Callout>
+  Press <kbd>backspace</kbd> or <kbd>delete</kbd> to remove the points and curve
+  segments that connect these points.
+</Callout>
+
+### Connect Paths
+
+1. Click the endpoint of the first path you want to connect.
+2. Click the endpoint of the second path you want to connect with.
+
+### Continue Paths
+
+To continue adding points to a path, click the endpoint of the open path you want to continue.
+
+## Edit Paths with the Direct Selection Tool
+
+To activate the direct selection tool, you can edither
+
+- Click the direct selection tool in the toolbar
+- Or press <kbd>ctrl/command</kbd> while drawing paths using the pen tool.
+
+### Move Anchor Points
+
+Do one of the following:
+
+1. Click and drag the points to a new position.
+2. Enter a new position in the transform panel.
+
+You can also align and distribute the points using the commands in the align panel.
+
+<Callout>
+**Modifier Keys**
+
+- <kbd>shift</kbd> constrain the movement to multiples of 45 degrees.
+</Callout>
+
+### Move Bezier Handles
+
+1. Select the anchor points you want to modify.
+2. To move a handle, simply click and drag one of the direction handles of an anchor point.
+
+<Callout>
+**Modifier Keys**
+
+- <kbd>shift</kbd> constrain the angle to multiples of 45 degrees or snap to the
+  tangent of curve segments.
+- <kbd>alt/option</kbd> drag the handle individually, it helps you to convert a smooth point to a corner.
+</Callout>
+
+### Edit Anchor Points
+
+In the anchors panel, you will see following commands:
+
+- **Convert to Corner Points**: this command clears the handles of the selected points.
+- **Convert to Smooth Points**: this command adds two collinear handles to form a smooth point.
+- **Cut Paths**: this command splits paths at the selected points.
+- **Join Paths**: this command joins two open paths at the selected endpoints.
+- **Remove Anchor Points**: Unlike deleting points from the paths, this command removes also the curve segments the points belong to.
+
+## Draw Shapes with the Shape Builder Tool
+
+The shape builder tool allows you to create complex paths in a quick and intuitive way.
+
+1. Select two or more paths.
+2. Select the shape builder tool <InlineIcon d={icons.shapeBuilder} /> from the toolbar.
+3. Click and drag across the sub-regions to exact them from the selected paths and merge into the resulting shape.
+4. Release the mouse button to create the shape.
 
 ## Boolean Operations
 
+Select two or more paths, then in the path finder panel in the right sidebar, click one of the following commands:
+
+- **Union**: this operation combines multiple paths into a single path.
+- **Subtract Front Path**: this operation subtracts the most front path from the path(s) behind it.
+- **Intersect Overlap**: this operation creates a new path by retaining only the overlapping area of selected paths.
+- **Exclude Overlap**: this operation removes the overlapping area between paths, creating a new path with the non-overlapping areas.
+
 ## Live Corners
 
-## Perspective Transform
+With Live Corners, you can dynamically change the corner radius of paths, such as rectangles and polygons.
+
+1. Select one or more anchor points with the direct selection tool.
+2. Small circles will appear at the anchor points, which are connected by two straight lines or an arc and a straight line.
+3. Click and drag on one of the circles to adjust the corner radius interactively.
+4. In the round corners panel in the right sidebar, you can also manually type the corner radius.
+
+## Free Transform
+
+The free transform tool allows you to shear, skew or distort the selected paths.
+
+1. Select one or more paths using the selection tool or the layers panel.
+2. Select the free transform tool <InlineIcon d={icons.freeTransform} /> in the toolbar or press <kbd>e</kbd>.
+3. To skew or shear the objects, click and drag one of the sides of the bounding box.
+4. To distort the objects freely, click and drag one of the corners of the bounding box.
+
+<Callout>
+**Modifier Keys**
+
+- <kbd>alt/option</kbd> Enable perspective distort.
+</Callout>
 
 ## Offset Paths
 
+1. Select one or more paths.
+2. Select Menubar > Object > Path > Offset Paths.
+3. In the dialog box, you can set the options for the offset:
+
+   - **Offset**: enter a positive number to offset the paths outwards, or a negative number to offset inwards.
+   - **Joins**: select how the corners to be joined in the offset paths.
+   - **Miter Limit** : the maximum allowed ratio of miter length to the offset.
+   - **Preview**: enable the preview checkbox to offset the paths in real-time.
+
+4. Once you have set the options, click the "OK" button to create offset paths.
+
 ## Smooth Paths
+
+1. Select one or more paths.
+2. Select Menubar > Object > Path > Smooth Paths.
+3. In the dialog box, you can adjust the smoothness and select a smoothing method.
+4. Once you have set the options, click the "OK" button to apply the smoothing effect to the paths.
 
 ## Blend Paths
 
+1. Select exactly two paths with same number of segments.
+2. Select Menubar > Object > Path > Blend Paths.
+3. In the dialog box, you can enter the number of steps for the transition.
+4. Once you have set the option, click the "OK" button to create a smooth transition between two paths.
+
 ## Simplify Paths
 
+1. Select one or more paths.
+2. Select Menubar > Object > Path > Simplify Paths.
+3. In the dialog box, you can adjust the tolerance, which determines the simplicity of the resulting path.
+4. Once you have set the option, click the "OK" button to simplify the selected paths.
+
 ## Outline strokes
+
+Select Menubar > Object > Path > Outline Stroke, this command will convert the stroke of a path into a separate path that you can edit independently.
