@@ -1,30 +1,7 @@
-import icons from "icons/icons";
-import Icon from "icons/icon";
-import Badge from "components/badge";
-
-import styles from "styles/index.module.scss";
+import Banner from "components/banner";
+import Features from "components/features";
 
 <div className="nx-text-slate-900 dark:nx-text-slate-100">
-  <section className={styles.banner}>
-    <h1>A free yet powerful online vector graphics editor for designers</h1>
-    <p>Start creating your design without sign in and subscriptions</p>
-    <a href="https://provector.app">GETTING STATED - it's free</a>
-    <div className={styles.badges}>
-      <Badge content="Illustration">
-        <Icon size={20} d={icons.check} />
-      </Badge>
-      <Badge content="UI Design">
-        <Icon size={20} d={icons.check} />
-      </Badge>
-      <Badge content="Technical Drawing">
-        <Icon size={20} d={icons.check} />
-      </Badge>
-      <Badge content="Print">
-        <Icon size={20} d={icons.check} />
-      </Badge>
-      <Badge content="Typography">
-        <Icon size={20} d={icons.check} />
-      </Badge>
-    </div>
-  </section>
+  <Banner />
+  <Features />
 </div>

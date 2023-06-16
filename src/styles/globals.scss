@@ -16,7 +16,7 @@ $neutral-900: #171717;
 :root {
   --fg-color: #{$slate-900};
   --bg-color: #{$slate-100};
-  --bg-color-badge: #{$neutral-100};
+  --bg-color-chip: #{$neutral-100};
   --bg-color-kbd: #{$white};
   --border-color-kbd: #{$gray-200};
 }
@@ -24,7 +24,7 @@ $neutral-900: #171717;
 .dark {
   --fg-color: #{$slate-100};
   --bg-color: #{$slate-900};
-  --bg-color-badge: #{$neutral-800};
+  --bg-color-chip: #{$neutral-800};
   --bg-color-kbd: #{$neutral-900};
   --border-color-kbd: #{rgba($gray-200, 0.2)};
 }

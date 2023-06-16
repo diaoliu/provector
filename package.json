@@ -9,11 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@types/node": "20.1.7",
-    "@types/react": "18.2.6",
-    "@types/react-dom": "18.2.4",
-    "eslint": "8.40.0",
-    "eslint-config-next": "13.4.2",
+    "clsx": "^1.2.1",
     "next": "13.4.2",
     "nextra": "^2.5.2",
     "nextra-theme-docs": "^2.5.2",
@@ -21,6 +17,11 @@
     "react-dom": "18.2.0"
   },
   "devDependencies": {
+    "@types/node": "20.1.7",
+    "@types/react": "18.2.6",
+    "@types/react-dom": "18.2.4",
+    "eslint": "8.40.0",
+    "eslint-config-next": "13.4.2",
     "sass": "^1.62.1",
     "typescript": "5.0.4"
   }

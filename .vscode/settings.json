@@ -1,3 +1,9 @@
 {
-  "cSpell.words": ["nextra", "unoptimized"]
+  "cSpell.words": [
+    "nextra",
+    "unoptimized"
+  ],
+  "cSpell.enableFiletypes": [
+    "mdx"
+  ]
 }

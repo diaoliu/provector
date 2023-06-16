@@ -1,0 +1,18 @@
+.section {
+  padding: 4rem 0;
+
+  & h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    padding-top: 0.5rem;
+    padding-bottom: 1rem;
+  }
+
+  & p {
+    padding-bottom: 1.5rem;
+  }
+}
+
+.chip {
+  margin-bottom: 1rem;
+}
