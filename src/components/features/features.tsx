@@ -1,12 +1,12 @@
-import styles from "styles/features.module.scss";
-
 import FeatureSection from "./feature-section";
 
 const Features = () => (
-  <div className={styles.features}>
+  <>
     <FeatureSection
+      reverse
       label="Cross-platform"
       header="Create Stunning Design in Browser"
+      image="/browser.png"
       functions={["MacOS", "Windows", "Linux"]}
     >
       Start drawing vector graphics immediately in your browser without
@@ -17,6 +17,7 @@ const Features = () => (
     <FeatureSection
       label="Illustration"
       header="Sophisticated Illustration Has Been Never Easier"
+      image="/illustration.png"
       functions={[
         "Pen Tool",
         "Direct Selection Tool",
@@ -37,8 +38,10 @@ const Features = () => (
       path editing features help you to realize your ideas without limitations.
     </FeatureSection>
     <FeatureSection
+      reverse
       label="Technical Drawing"
       header="Make Precise Drawings Like an Engineer"
+      image="/drawing.png"
       functions={[
         "Snap to Grid",
         "Snap to Bounding Boxes",
@@ -47,14 +50,15 @@ const Features = () => (
         "Snap to Curve Tangent",
       ]}
     >
-      Whether you're an engineer, product designer, or architect, our object
-      snaps function enables you to create more precise geometric shapes and
-      elegant curves, allowing you to build professional technical drawings. In
+      Whether you're an engineer, product designer, or architect, object snaps
+      enables you to create more precise geometric shapes and elegant curves,
+      allowing you to build professional technical drawings effortlessly. In
       addition you can add more attractive styles to your drawings.
     </FeatureSection>
     <FeatureSection
       label="UI Design / Print / Typography"
       header="Start Your Projects Today With the Tools You Know"
+      image="/print.png"
       functions={[
         "Unlimited Frames",
         "Align and Distribute Objects",
@@ -72,7 +76,7 @@ const Features = () => (
       softwares. Directly access your local fonts without plugins to make great
       typography.
     </FeatureSection>
-  </div>
+  </>
 );
 
 export default Features;

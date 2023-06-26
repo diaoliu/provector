@@ -1,17 +1,9 @@
+@import "variables";
 @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap");
 
 html {
   font-family: "Manrope", sans-serif !important;
 }
-
-// https://tailwindcss.com/docs/customizing-colors
-$white: #ffffff;
-$gray-200: #e5e7eb;
-$slate-100: #f1f5f9;
-$slate-900: #0f172a;
-$neutral-100: #f5f5f5;
-$neutral-800: #262626;
-$neutral-900: #171717;
 
 :root {
   --fg-color: #{$slate-900};
@@ -30,13 +22,8 @@ $neutral-900: #171717;
 }
 
 kbd {
-  padding: 0.25rem 0.375rem;
-  background-color: var(--bg-color-kbd);
-  border-color: var(--border-color-kbd);
-  border-width: 1px;
-  border-radius: 0.25rem;
-  font-size: 0.875rem !important;
-  font-weight: 500;
+  padding: 0 0.25rem;
+  font-weight: 700;
   text-transform: capitalize;
 }
 
