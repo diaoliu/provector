@@ -1,46 +1,44 @@
 @import "variables";
 
 .banner {
-  padding-top: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+
   text-align: center;
 
   & h1 {
+    max-width: $screen-desktop;
+    margin-top: 3.75rem;
     font-size: 3.5rem;
     font-weight: 800;
     line-height: 1.3;
-    max-width: 1024px;
-    margin: 0 auto;
-  }
-
-  & p {
-    margin: 1.5rem 0 2rem;
   }
 
   & .link {
     display: inline-block;
-    color: $slate-900;
-    font-weight: 800;
     padding: 0.8rem 2rem;
     border-radius: 3rem;
     background-color: $primary-color;
+    color: $slate-900;
+    font-weight: 800;
   }
 
-  & .badges {
-    display: flex;
-    flex-wrap: wrap;
+  & .chips {
     justify-content: center;
-    margin: 2.5rem 0 2rem;
+  }
+}
+
+@media (max-width: $screen-desktop) {
+  .banner h1 {
+    margin-top: 2.5rem;
   }
 }
 
 @media (max-width: $screen-mobile) {
   .banner h1 {
-    font-size: 2rem;
-  }
-}
-
-@media (max-width: $screen-desktop) {
-  .banner {
-    padding-top: 2rem;
+    font-size: 2.5rem;
+    margin-top: 2rem;
   }
 }

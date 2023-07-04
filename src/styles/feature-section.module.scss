@@ -3,11 +3,15 @@
 .section {
   display: flex;
   align-items: center;
-  padding: 3rem 0;
-  margin: 0 -1rem;
+  gap: 2rem;
+  margin: 6rem 0;
 
   &.reverse {
     flex-direction: row-reverse;
+  }
+
+  & .row {
+    width: 50%;
   }
 
   & img {
@@ -15,36 +19,34 @@
     overflow: hidden;
   }
 
-  & .row {
-    width: 50%;
-    margin: 0 1rem;
-  }
-
   & h2 {
     font-size: 2rem;
     font-weight: 700;
-    padding-bottom: 1rem;
+    margin: 1rem 0;
   }
 
   & p {
-    padding-bottom: 1.5rem;
+    margin-bottom: 1.5rem;
   }
 }
 
 @media (max-width: $screen-desktop) {
-  .section {
-    display: block;
-    padding: 0;
-    margin: 3rem 0;
+  .section,
+  .section.reverse {
+    flex-direction: column;
+    margin: 4rem 0;
   }
 
   .section .row {
     width: 100%;
-    margin: 1.5rem 0;
   }
 }
 
 @media (max-width: $screen-mobile) {
+  .section {
+    margin: 3rem 0;
+  }
+
   .section img {
     border-radius: 0.75rem;
   }

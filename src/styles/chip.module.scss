@@ -1,11 +1,15 @@
 @import "variables";
 
+.chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
 .chip {
   display: inline-flex;
   align-items: center;
   padding: 0.25rem;
-  margin-right: 1rem;
-  margin-bottom: 1rem;
   border-radius: 3rem;
   background-color: var(--bg-color-chip);
 
@@ -13,12 +17,5 @@
     margin: 0 0.5rem;
     letter-spacing: 1px;
     white-space: nowrap;
-  }
-}
-
-@media (max-width: $screen-mobile) {
-  .chip {
-    margin-right: 0.5rem;
-    margin-bottom: 0.5rem;
   }
 }

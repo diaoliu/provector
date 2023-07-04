@@ -11,7 +11,7 @@ interface FeatureLinkProps {
   label: string;
 }
 
-const FeatureLink = ({ className, label, href = "/" }: FeatureLinkProps) => (
+const FeatureLink = ({ className, label, href }: FeatureLinkProps) => (
   <a className={clsx(styles.chip, className)} href={href}>
     <Icon size={20} d={icons.check} />
     <small>{label}</small>
