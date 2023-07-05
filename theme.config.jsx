@@ -1,7 +1,7 @@
-import Logo from "components/Logo";
-import Head from "components/Head";
+import Logo from "components/logo";
+import Head from "components/head";
 import site from "shared/site";
-import useNextSeoProps from "hooks/useNextSeoProps";
+import useNextSeoProps from "hooks/use-next-seo-props";
 
 const themeConfig = {
   logo: Logo,
