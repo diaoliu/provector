@@ -1,3 +1,4 @@
+import site from "shared/site";
 import Chips from "components/chips";
 import FeatureLink from "components/features/feature-link";
 import FeatureSections from "components/features/feature-sections";
@@ -10,7 +11,7 @@ const TECHNICAL_DRAWING = "/#" + FeatureSections.TECHNICAL_DRAWING;
 
 const Banner = () => (
   <section className={styles.banner}>
-    <h1>A free yet powerful online vector graphics editor for designers</h1>
+    <h1>{site.description}</h1>
     <p>Start creating your design without sign up and subscriptions</p>
     <a href="https://provector.app" className={styles.link}>
       GETTING STATED - it's free
