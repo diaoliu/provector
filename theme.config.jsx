@@ -1,3 +1,5 @@
+import { useRouter } from "next/router";
+
 const logo = (
   <>
     <svg fill="currentColor" width="20" height="20" viewBox="0 0 24 24">
@@ -7,8 +9,34 @@ const logo = (
   </>
 );
 
+const domain = "https://start.provector.app";
+
+const description =
+  "A free yet powerful online vector graphics editor for designers";
+
+const head = (
+  <>
+    <meta property="description" content={description} />
+    <meta property="og:description" content={description} />
+    <meta property="og:image" content={domain + "/browser.png"} />
+    <meta property="og:image:width" content={800} />
+    <meta property="og:image:height" content={400} />
+    <meta property="og:url" content={domain} />
+    <meta property="og:type" content="website" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  </>
+);
+
+const useNextSeoProps = () => {
+  const { asPath } = useRouter();
+
+  return { titleTemplate: asPath === "/" ? "Provector" : "Provector | %s" };
+};
+
 const themeConfig = {
   logo,
+  head,
+  useNextSeoProps,
   docsRepositoryBase: "https://github.com/diaoliu/provector/blob/main",
   project: {
     link: "https://github.com/diaoliu/provector",
