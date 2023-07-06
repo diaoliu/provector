@@ -7,18 +7,14 @@ html {
 
 :root {
   --fg-color: #{$slate-900};
-  --bg-color: #{$slate-100};
   --bg-color-chip: #{$neutral-100};
-  --bg-color-kbd: #{$white};
-  --border-color-kbd: #{$gray-200};
+  --border-color: #{$gray-200};
 }
 
 .dark {
   --fg-color: #{$slate-100};
-  --bg-color: #{$slate-900};
   --bg-color-chip: #{$neutral-800};
-  --bg-color-kbd: #{$neutral-900};
-  --border-color-kbd: #{rgba($gray-200, 0.2)};
+  --border-color: #{rgba($gray-200, 0.2)};
 }
 
 kbd {

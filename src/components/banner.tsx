@@ -1,5 +1,6 @@
 import site from "shared/site";
 import Chips from "components/chips";
+import AppLink from "components/app-link";
 import FeatureLink from "components/features/feature-link";
 import FeatureSections from "components/features/feature-sections";
 
@@ -13,9 +14,7 @@ const Banner = () => (
   <section className={styles.banner}>
     <h1>{site.description}</h1>
     <p>Start creating your design without sign up and subscriptions</p>
-    <a href="https://provector.app" className={styles.link}>
-      GETTING STATED - it's free
-    </a>
+    <AppLink />
     <Chips className={styles.chips}>
       <FeatureLink label="Illustration" href={ILLUSTRATION} />
       <FeatureLink label="Technical Drawing" href={TECHNICAL_DRAWING} />
