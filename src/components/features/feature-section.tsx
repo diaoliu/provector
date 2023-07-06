@@ -1,4 +1,5 @@
 import clsx from "clsx";
+import Image from "next/image";
 
 import Chip from "components/chip";
 
@@ -11,6 +12,7 @@ interface FeatureSectionProps {
   label: string;
   image: string;
   reverse?: boolean;
+  priority?: boolean;
 }
 
 const FeatureSection = ({
@@ -20,9 +22,17 @@ const FeatureSection = ({
   label,
   image,
   reverse,
+  priority,
 }: FeatureSectionProps) => (
   <section id={id} className={clsx(styles.section, reverse && styles.reverse)}>
-    <img className={styles.row} src={image} alt={label} />
+    <Image
+      alt={label}
+      src={image}
+      width={800}
+      height={400}
+      priority={priority}
+      className={styles.row}
+    />
     <div className={styles.row}>
       <Chip label={label} />
       <h2>{header}</h2>

@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 import AppLink from "components/app-link";
 
 import styles from "styles/get-started.module.scss";
@@ -9,7 +11,7 @@ const GetStarted = () => (
       <p>No membership, no subscriptions,no downloads, no installation.</p>
       <AppLink />
     </div>
-    <img src="/screenshot.png" alt="screenshot" />
+    <Image width={600} height={400} alt="screenshot" src="/screenshot.webp" />
   </section>
 );
 

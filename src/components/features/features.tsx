@@ -7,10 +7,11 @@ const Features = () => (
   <>
     <FeatureSection
       reverse
+      priority
       id={FeatureSections.CROSS_PLATFORM}
       label="Cross-platform"
       header="Create Stunning Design in Browser"
-      image="/browser.png"
+      image="/browser.webp"
     >
       <p>
         Start drawing vector graphics immediately in your browser without
@@ -28,7 +29,7 @@ const Features = () => (
       id={FeatureSections.ILLUSTRATION}
       label="Illustration"
       header="Sophisticated Illustration Has Been Never Easier"
-      image="/illustration.png"
+      image="/illustration.svg"
     >
       <p>
         Easily create and edit sophisticated and professional vector graphics
@@ -66,7 +67,7 @@ const Features = () => (
       id={FeatureSections.TECHNICAL_DRAWING}
       label="Technical Drawing"
       header="Make Precise Drawings Like an Engineer"
-      image="/drawing.png"
+      image="/drawing.svg"
     >
       <p>
         Whether you are an engineer, product designer, or architect, object
@@ -102,7 +103,7 @@ const Features = () => (
       id={FeatureSections.PRINT}
       label="UI Design / Print / Typography"
       header="Start Your Projects Today With the Tools You Know"
-      image="/print.png"
+      image="/print.webp"
     >
       <p>
         Create interface design, poster or whatever you want with infinite
