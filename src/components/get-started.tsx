@@ -9,7 +9,7 @@ const GetStarted = () => (
       <p>No membership, no subscriptions,no downloads, no installation.</p>
       <AppLink />
     </div>
-    <img src="/screenshot.png" />
+    <img src="/screenshot.png" alt="screenshot" />
   </section>
 );
 

@@ -22,7 +22,7 @@ const FeatureSection = ({
   reverse,
 }: FeatureSectionProps) => (
   <section id={id} className={clsx(styles.section, reverse && styles.reverse)}>
-    <img className={styles.row} src={image} />
+    <img className={styles.row} src={image} alt={label} />
     <div className={styles.row}>
       <Chip label={label} />
       <h2>{header}</h2>

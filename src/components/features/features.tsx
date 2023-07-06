@@ -69,10 +69,11 @@ const Features = () => (
       image="/drawing.png"
     >
       <p>
-        Whether you're an engineer, product designer, or architect, object snaps
-        enables you to create more precise geometric shapes and elegant curves,
-        allowing you to build professional technical drawings effortlessly. In
-        addition you can add more attractive styles to your drawings.
+        Whether you are an engineer, product designer, or architect, object
+        snaps enables you to create more precise geometric shapes and elegant
+        curves, allowing you to build professional technical drawings
+        effortlessly. In addition you can add more attractive styles to your
+        drawings.
       </p>
       <Chips>
         <FeatureLink
