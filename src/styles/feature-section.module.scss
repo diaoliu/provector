@@ -6,12 +6,12 @@
   gap: 2rem;
   margin: 6rem 0;
 
-  &.reverse {
-    flex-direction: row-reverse;
+  & > * {
+    width: 50%;
   }
 
-  & .row {
-    width: 50%;
+  &.reverse {
+    flex-direction: row-reverse;
   }
 
   & img {
@@ -37,7 +37,7 @@
     margin: 4rem 0;
   }
 
-  .section .row {
+  .section > * {
     width: 100%;
   }
 }

@@ -6,11 +6,9 @@ interface AppLinkProps {
   className?: string;
 }
 
-const content = "GETTING STATED - it's free";
-
 const AppLink = ({ className }: AppLinkProps) => (
   <a className={clsx(className, styles.appLink)} href="https://provector.app">
-    {content}
+    GETTING STATED
   </a>
 );
 
