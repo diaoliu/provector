@@ -99,11 +99,6 @@ Select the pen tool in the toolbar or press <kbd>p</kbd>.
 2. Click the curve segments of the path to add new anchor points.
 3. Click the anchor points of the path to remove them from the path.
 
-<Callout>
-  Press <kbd>backspace</kbd> or <kbd>delete</kbd> to remove the points and curve
-  segments that connect these points.
-</Callout>
-
 ### Connect Paths
 
 1. Click the endpoint of the first path you want to connect.
@@ -115,7 +110,7 @@ To continue adding points to a path, click the endpoint of the open path you wan
 
 ## Edit Paths with the Direct Selection Tool
 
-To activate the direct selection tool, you can edither
+To activate the direct selection tool, you can either
 
 - Click the direct selection tool in the toolbar
 - Or press <kbd>ctrl/command</kbd> while drawing paths using the pen tool.
@@ -148,15 +143,57 @@ You can also align and distribute the points using the commands in the align pan
 - <kbd>alt/option</kbd> drag the handle individually, it helps you to convert a smooth point to a corner.
 </Callout>
 
-### Edit Anchor Points
+### Remove Anchor Points
 
-In the anchors panel, you will see following commands:
+Unlike deleting points from the paths, this command removes also the curve segments the points belong to.
 
-- **Convert to Corner Points**: this command clears the handles of the selected points.
-- **Convert to Smooth Points**: this command adds two collinear handles to form a smooth point.
-- **Cut Paths**: this command splits paths at the selected points.
-- **Join Paths**: this command joins two open paths at the selected endpoints.
-- **Remove Anchor Points**: Unlike deleting points from the paths, this command removes also the curve segments the points belong to.
+Select one or more anchor points, then do one of the following:
+
+- Press <kbd>backspace</kbd> or <kbd>delete</kbd> on the keyboard.
+- Click **Remove Anchor Points** in the anchors panel.
+
+### Convert to Corner Points
+
+To clear the handles of the selected points, select one or more points, then do one of the following:
+
+- Hold down <kbd>Alt</kbd> and click at an anchor point.
+- Click **Convert to Corner Points** in the anchors panel to convert all selected points to corner.
+
+### Convert to Smooth Points
+
+To add two collinear handles to form a smooth point, select one or more points, then do one of the following:
+
+- Hold down <kbd>Alt</kbd> and click at an anchor point.
+- Click **Convert to Smooth Points** in the anchors panel to convert all selected points to smooth.
+
+### Cut Paths
+
+To open a closed path or split paths at selected anchor points:
+
+1. Select one or more anchor points.
+2. With the direct selection tool active, in the anchors panel, click **Cut Paths**.
+
+## Join Paths
+
+1. Select two endpoints.
+2. Do one of the following to close an open path or join two paths:
+   - Press <kbd>Ctrl + J</kbd> on the keyboard.
+   - With the direct selection tool active, in the anchors panel, click **Join Paths**.
+
+## Quick Join Paths
+
+1. Select one or more open paths.
+2. Do one of the following to close an open path or join paths automatically by closest endpoints:
+   - Press <kbd>Ctrl + J</kbd> on the keyboard.
+   - With the direct selection tool active, in the anchors panel, click **Join Paths**.
+
+## Trim Paths with the Trim Tool
+
+The trim tool lets you to trim selected paths by their crossing points.
+
+1. Select two or more paths.
+2. Select the trim tool <InlineIcon d={icons.trim} /> from the toolbar.
+3. Drag your mouse across the curves you want to trim off.
 
 ## Draw Shapes with the Shape Builder Tool
 
@@ -203,7 +240,7 @@ The free transform tool allows you to shear, skew or distort the selected paths.
 ## Offset Paths
 
 1. Select one or more paths.
-2. Select Menubar > Object > Path > Offset Paths.
+2. Select **Menu > Object > Path > Offset Paths**.
 3. In the dialog box, you can set the options for the offset:
 
    - **Offset**: enter a positive number to offset the paths outwards, or a negative number to offset inwards.
@@ -216,24 +253,24 @@ The free transform tool allows you to shear, skew or distort the selected paths.
 ## Smooth Paths
 
 1. Select one or more paths.
-2. Select Menubar > Object > Path > Smooth Paths.
+2. Select **Menu > Object > Path > Smooth Paths**.
 3. In the dialog box, you can adjust the smoothness and select a smoothing method.
 4. Once you have set the options, click the "OK" button to apply the smoothing effect to the paths.
 
 ## Blend Paths
 
 1. Select exactly two paths with same number of segments.
-2. Select Menubar > Object > Path > Blend Paths.
+2. Select **Menu > Object > Path > Blend Paths**.
 3. In the dialog box, you can enter the number of steps for the transition.
 4. Once you have set the option, click the "OK" button to create a smooth transition between two paths.
 
 ## Simplify Paths
 
 1. Select one or more paths.
-2. Select Menubar > Object > Path > Simplify Paths.
+2. Select **Menu > Object > Path > Simplify Paths**.
 3. In the dialog box, you can adjust the tolerance, which determines the simplicity of the resulting path.
 4. Once you have set the option, click the "OK" button to simplify the selected paths.
 
 ## Outline strokes
 
-Select Menubar > Object > Path > Outline Stroke, this command will convert the stroke of a path into a separate path that you can edit independently.
+Select **Menu > Object > Path > Outline Stroke**, this command will convert the stroke of a path into a separate path that you can edit independently.

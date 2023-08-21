@@ -16,10 +16,12 @@
   "arrange-objects": "Arrange Objects",
   "object-snaps": "Object Snaps",
   "appearance": "Appearance",
-  "-- Reference": {
+  "-- Workspace": {
     "type": "separator",
-    "title": "Reference"
+    "title": "Workspace"
   },
+  "export": "Export",
+  "preferences": "Preferences",
   "tools": "Tools",
   "keyboard-shortcuts": "Keyboard Shortcuts"
 }
