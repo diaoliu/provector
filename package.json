@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@mdi/js": "^7.3.67",
     "clsx": "^1.2.1",
     "next": "13.4.2",
     "nextra": "^2.5.2",

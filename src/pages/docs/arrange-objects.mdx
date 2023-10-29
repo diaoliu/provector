@@ -1,6 +1,19 @@
+import {
+  mdiAlignVerticalTop,
+  mdiAlignVerticalCenter,
+  mdiAlignVerticalBottom,
+  mdiAlignHorizontalLeft,
+  mdiAlignHorizontalCenter,
+  mdiAlignHorizontalRight,
+  mdiAlignHorizontalDistribute,
+  mdiAlignVerticalDistribute,
+  mdiReflectHorizontal,
+  mdiReflectVertical,
+  mdiLock,
+  mdiEye,
+} from "@mdi/js";
 import { Callout } from "nextra-theme-docs";
 
-import icons from "icons/icons";
 import InlineIcon from "icons/inline-icon";
 import IconSpacing from "icons/icon-spacing";
 
@@ -10,14 +23,14 @@ import IconSpacing from "icons/icon-spacing";
 
 Select at least one object, go to the align panel in the right sidebar, you will see following options:
 
-- <InlineIcon d={icons.alignTop} /> Align Top
-- <InlineIcon d={icons.alignMiddle} /> Align Middle
-- <InlineIcon d={icons.alignBottom} /> Align Bottom
-- <InlineIcon d={icons.alignLeft} /> Align Left
-- <InlineIcon d={icons.alignCenter} /> Align Center
-- <InlineIcon d={icons.alignRight} /> Align Right
-- <InlineIcon d={icons.distributeHorizontal} /> Horizontal Distribute objects evenly
-- <InlineIcon d={icons.distributeVertical} /> Vertical Distribute objects evenly
+- <InlineIcon d={mdiAlignVerticalTop} /> Align Top
+- <InlineIcon d={mdiAlignVerticalCenter} /> Align Middle
+- <InlineIcon d={mdiAlignVerticalBottom} /> Align Bottom
+- <InlineIcon d={mdiAlignHorizontalLeft} /> Align Left
+- <InlineIcon d={mdiAlignHorizontalCenter} /> Align Center
+- <InlineIcon d={mdiAlignHorizontalRight} /> Align Right
+- <InlineIcon d={mdiAlignHorizontalDistribute} /> Horizontal Distribute objects evenly
+- <InlineIcon d={mdiAlignVerticalDistribute} /> Vertical Distribute objects evenly
 
 Click an option to align or distribute the selection.
 
@@ -78,8 +91,8 @@ To rotate objects you can either:
 
 Select at least one object, in the transform panel in the right sidebar, click one of following buttons:
 
-- <InlineIcon d={icons.flipAlong} /> Flip Along
-- <InlineIcon d={icons.flipAcross} /> Flip Across
+- <InlineIcon d={mdiReflectHorizontal} /> Flip Along
+- <InlineIcon d={mdiReflectVertical} /> Flip Across
 
 ## Adjust Spacing
 
@@ -153,7 +166,7 @@ Select one or more objects, then lock or unlock the selection in few ways:
 - Press <kbd>ctrl/command + l</kbd>
 - Go to **Menu > Object > Lock/Unlock**.
 - Right click the selection to open **Context Menu > Lock/Unlock**.
-- In the layers panel, click the eye button <InlineIcon d={icons.eye} /> to lock or unlock an object.
+- In the layers panel, click the lock button <InlineIcon d={mdiLock} /> to lock or unlock an object.
 
 ## Show/Hide Objects
 
@@ -162,4 +175,4 @@ Select one or more objects, then show or hide the selection in few ways:
 - Press <kbd>ctrl/command + h</kbd>
 - Go to **Menu > Object > Show/Hide**.
 - Right click the selection to open **Context Menu > Show/Hide**.
-- In the layers panel, click lock button <InlineIcon d={icons.lock} /> to show or hide an object.
+- In the layers panel, click eye button <InlineIcon d={mdiEye} /> to show or hide an object.

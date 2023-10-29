@@ -1,20 +1,92 @@
-@import "variables";
-@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;700&display=swap");
+
+$fallback-font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI",
+  Roboto, "Helvetica Neue", sans-serif;
 
 html {
-  font-family: "Manrope", sans-serif !important;
+  font-size: 16px;
+}
+
+body {
+  margin: 0;
+  color: var(--color-text);
+  font-family: "Lexend", $fallback-font-family;
+  font-weight: 300;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  font-weight: 500 !important;
+}
+
+p {
+  margin: 0;
+}
+
+button,
+strong {
+  font-family: "Lexend", $fallback-font-family;
+  font-weight: 400;
+}
+
+small {
+  font-size: 0.875rem;
 }
 
 :root {
-  --fg-color: #{$slate-900};
-  --bg-color-chip: #{$neutral-100};
-  --border-color: #{$gray-200};
+  --color-text: #1e293b;
+  --color-text-light: #475569;
+  --color-border: rgba(220, 223, 229, 0.4);
+  --color-white: #ffffff;
+  --color-white-translucent: rgba(255, 255, 255, 0.8);
+  --gap: 6rem;
+  --h1-font-size: 4rem;
+  --h2-font-size: 2.5rem;
+  --section-margin: 6rem;
+  --tools-per-columns: 6;
+  --doodle-underline-size: 30rem;
+  --feature-padding: 2rem;
 }
 
-.dark {
-  --fg-color: #{$slate-100};
-  --bg-color-chip: #{$neutral-800};
-  --border-color: #{rgba($gray-200, 0.2)};
+@media (max-width: 1280px) {
+  :root {
+    --tools-per-columns: 4;
+  }
+}
+
+@media (max-width: 1024px) {
+  :root {
+    --gap: 2rem;
+    --tools-per-columns: 3;
+    --section-margin: 5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  :root {
+    --section-margin: 4rem;
+    --doodle-underline-size: 0;
+  }
+}
+
+@media (max-width: 640px) {
+  :root {
+    --gap: 1.5rem;
+    --tools-per-columns: 2;
+    --h1-font-size: 2.75rem;
+    --h2-font-size: 1.5rem;
+    --feature-padding: 1rem;
+  }
+}
+
+a {
+  color: var(--color-text);
+  text-decoration: none;
 }
 
 kbd {

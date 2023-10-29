@@ -1,6 +1,18 @@
+import {
+  mdiFormatText,
+  mdiFormatLineSpacing,
+  mdiFormatAlignLeft,
+  mdiFormatAlignCenter,
+  mdiFormatAlignRight,
+  mdiFormatAlignTop,
+  mdiFormatAlignMiddle,
+  mdiFormatAlignBottom,
+  mdiWrapDisabled,
+  mdiWrap,
+  mdiTextBoxOutline,
+} from "@mdi/js";
 import { Callout } from "nextra-theme-docs";
 
-import icons from "icons/icons";
 import InlineIcon from "icons/inline-icon";
 
 # Text
@@ -9,13 +21,13 @@ import InlineIcon from "icons/inline-icon";
 
 ### Create Point Texts
 
-1. Click the type tool <InlineIcon d={icons.text} /> in the toolbar or press <kbd>t</kbd>.
+1. Click the type tool <InlineIcon d={mdiFormatText} /> in the toolbar or press <kbd>t</kbd>.
 2. Position your cursor where you want to start your text and click on the canvas.
 3. Begin typing the desired text. You can adjust the font size and other text styles in the text panel in the right sidebar.
 
 ### Create Area Texts
 
-1. Click the type tool <InlineIcon d={icons.text} /> in the toolbar or press <kbd>t</kbd>.
+1. Click the type tool <InlineIcon d={mdiFormatText} /> in the toolbar or press <kbd>t</kbd>.
 2. Click and drag to create a text box on the canvas. This defines the area where your text will be contained.
 3. Click inside the text box and start typing your desired text. The text will automatically wrap within the boundaries of the text box.
 
@@ -62,7 +74,7 @@ Click the font weight dropdown in the text panel to choose a new weight from the
 
 Leading is also known as line spacing or line height. Leading determines the distance between baselines of two adjacent lines of a text. Do one of the following to adjust the leading:
 
-- Enter a new value in the leading field <InlineIcon d={icons.leading} /> in the text panel.
+- Enter a new value in the leading field <InlineIcon d={mdiFormatLineSpacing} /> in the text panel.
 - Leading will be automatically adjusted while changing the font size.
 
 ## Paragraph
@@ -71,22 +83,21 @@ Leading is also known as line spacing or line height. Leading determines the dis
 
 To change the text alignment within a text box, click one of the following options on the bottom of the text panel.
 
-- <InlineIcon d={icons.textLeft} /> Align Left
-- <InlineIcon d={icons.textCenter} /> Align Center
-- <InlineIcon d={icons.textRight} /> Align Right
-- <InlineIcon d={icons.textTop} /> Align Top
-- <InlineIcon d={icons.textMiddle} /> Align Middle
-- <InlineIcon d={icons.textBottom} /> Align Bottom
+- <InlineIcon d={mdiFormatAlignLeft} /> Align Left
+- <InlineIcon d={mdiFormatAlignCenter} /> Align Center
+- <InlineIcon d={mdiFormatAlignRight} /> Align Right
+- <InlineIcon d={mdiFormatAlignTop} /> Align Top
+- <InlineIcon d={mdiFormatAlignMiddle} /> Align Middle
+- <InlineIcon d={mdiFormatAlignBottom} /> Align Bottom
 
 ### Line Wrap
 
-- <InlineIcon d={icons.autoWidth} /> **Auto Width**: line wrapping will be not applied
+- <InlineIcon d={mdiWrapDisabled} /> **Auto Width**: line wrapping will be not applied
   to the selected texts.
-- <InlineIcon d={icons.autoHeight} /> **Auth Height**: the lines of the text will
-  be wrapped within its boundaries, the height will be automatically adapted to the
-  text content.
-- <InlineIcon d={icons.fixedSize} /> **Fixed Size**: similar to the auth height option,
-  but the height will be not changed while changing the text content.
+- <InlineIcon d={mdiWrap} /> **Auth Height**: the lines of the text will be wrapped
+  within its boundaries, the height will be automatically adapted to the text content.
+- <InlineIcon d={mdiTextBoxOutline} /> **Fixed Size**: similar to the auth height
+  option, but the height will be not changed while changing the text content.
 
 ## Create Outlines
 

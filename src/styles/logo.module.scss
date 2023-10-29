@@ -1,22 +1,21 @@
 .logo {
-  display: flex;
-  flex-direction: column;
-  gap: 0.75rem;
-
   & .row {
     display: flex;
     align-items: center;
     gap: 0.5rem;
   }
 
-  & .text {
-    display: flex;
-    align-items: baseline;
-    gap: 1rem;
-  }
-
   & strong {
     font-size: 1.5rem;
-    font-weight: 800;
+    font-weight: 700;
+  }
+
+  & .copyright {
+    display: block;
+    margin: 1.5rem 0 0.5rem;
+  }
+
+  & small {
+    color: var(--color-text-light);
   }
 }

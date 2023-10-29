@@ -1,0 +1,16 @@
+.link {
+  padding: 0 1.75rem;
+  line-height: 2.5rem;
+  border-radius: 3rem;
+  border: 2px solid var(--color-text);
+  transition: transform 300ms ease-in-out;
+
+  &:hover {
+    transform: scale(0.95);
+  }
+}
+
+.linkPrimary {
+  background-color: var(--color-text);
+  color: var(--color-white);
+}

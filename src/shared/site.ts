@@ -1,5 +1,6 @@
 const site = {
   domain: "https://start.provector.app",
+  docs: "https://start.provector.app/docs",
   description:
     "A free yet powerful online vector graphics editor for designers",
   github: "https://github.com/diaoliu/provector",

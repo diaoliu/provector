@@ -1,0 +1,27 @@
+.indexPage {
+  padding: 0 1rem;
+
+  & button {
+    appearance: none;
+    border: none;
+    cursor: pointer;
+  }
+
+  & h2 {
+    font-size: var(--h2-font-size);
+  }
+
+  & section {
+    margin: var(--section-margin) 0;
+  }
+
+  & main,
+  & footer {
+    max-width: 80rem;
+    margin: 0 auto;
+  }
+
+  & footer {
+    margin-bottom: 3rem;
+  }
+}

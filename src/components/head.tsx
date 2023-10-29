@@ -1,6 +1,6 @@
 import site from "shared/site";
 
-const Head = () => (
+const HeadMeta = () => (
   <>
     <meta name="description" content={site.description} />
     <meta property="og:description" content={site.description} />
@@ -13,4 +13,4 @@ const Head = () => (
   </>
 );
 
-export default Head;
+export default HeadMeta;

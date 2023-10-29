@@ -100,6 +100,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@mdi/js@npm:^7.3.67":
+  version: 7.3.67
+  resolution: "@mdi/js@npm:7.3.67"
+  checksum: bba88d6f1305a02c3b7372930746314aec1ddc31f04372c4da419a345661de3be34181a749afa00b1c0cd8281d9f443efe1876ee9ba683032e88f35466886900
+  languageName: node
+  linkType: hard
+
 "@mdx-js/mdx@npm:^2.2.1, @mdx-js/mdx@npm:^2.3.0":
   version: 2.3.0
   resolution: "@mdx-js/mdx@npm:2.3.0"
@@ -4842,6 +4849,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "provector@workspace:."
   dependencies:
+    "@mdi/js": ^7.3.67
     "@types/node": 20.1.7
     "@types/react": 18.2.6
     "@types/react-dom": 18.2.4

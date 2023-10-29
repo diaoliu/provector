@@ -1,0 +1,22 @@
+.features {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  gap: 1rem;
+  padding-top: 1rem;
+}
+
+.feature {
+  padding: var(--feature-padding);
+  border-radius: 1rem;
+  border: 1px solid var(--color-border);
+
+  & h3 {
+    font-size: 1.125rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  & small {
+    color: var(--color-text-light);
+  }
+}

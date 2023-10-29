@@ -1,15 +1,9 @@
-import clsx from "clsx";
+import Link from "components/link";
 
-import styles from "styles/app-link.module.scss";
-
-interface AppLinkProps {
-  className?: string;
-}
-
-const AppLink = ({ className }: AppLinkProps) => (
-  <a className={clsx(className, styles.appLink)} href="https://provector.app">
-    GETTING STATED
-  </a>
+const AppLink = () => (
+  <Link primary href="https://provector.app">
+    Start for free
+  </Link>
 );
 
 export default AppLink;
