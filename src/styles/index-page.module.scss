@@ -1,10 +1,13 @@
 .indexPage {
   padding: 0 1rem;
+  color: var(--color-text);
+  background-color: var(--color-white);
 
   & button {
     appearance: none;
     border: none;
     cursor: pointer;
+    color: var(--color-text);
   }
 
   & h2 {
@@ -22,6 +25,6 @@
   }
 
   & footer {
-    margin-bottom: 3rem;
+    padding-bottom: 3rem;
   }
 }
