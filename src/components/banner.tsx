@@ -1,3 +1,4 @@
+import site from "shared/site";
 import AppLink from "components/app-link";
 import Link from "components/link";
 import DoodleArrow from "icons/doodle-arrow";
@@ -8,9 +9,9 @@ import styles from "styles/banner.module.scss";
 const Banner = () => (
   <section className={styles.banner}>
     <h1>
-      A free
-      <span className={styles.underline}> yet powerful </span>
-      online vector graphics editor for designers
+      {site.descriptions[0]}
+      <span className={styles.underline}>{site.descriptions[1]}</span>
+      {site.descriptions[2]}
     </h1>
     <p>Start creating your design without sign up and subscriptions</p>
     <div className={styles.links}>

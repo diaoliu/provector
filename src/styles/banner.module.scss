@@ -24,14 +24,13 @@
     &::after {
       content: "";
       position: absolute;
-      bottom: -0.5rem;
+      bottom: -1rem;
       left: -2rem;
       height: 1rem;
       width: var(--doodle-underline-size);
       background-image: url(/doodle-underline.svg);
       background-repeat: no-repeat;
       background-size: contain;
-      z-index: -1;
     }
   }
 

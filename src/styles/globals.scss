@@ -38,12 +38,20 @@ small {
   font-size: 0.875rem;
 }
 
+$slate-50: #f8fafc;
+$slate-300: #cbd5e1;
+$slate-600: #475569;
+$slate-800: #1e293b;
+$gray-700: #222325;
+$gray-800: #151616;
+
 :root {
-  --color-text: #1e293b;
-  --color-text-light: #475569;
+  --color-text: #{$slate-800};
+  --color-text-muted: #{$slate-600};
   --color-border: rgba(220, 223, 229, 0.4);
-  --color-white: #ffffff;
-  --color-white-translucent: rgba(255, 255, 255, 0.8);
+  --color-background: #ffffff;
+  --color-background-muted: #{$slate-50};
+  --color-background-translucent: rgba(255, 255, 255, 0.8);
   --gap: 6rem;
   --h1-font-size: 4rem;
   --h2-font-size: 2.5rem;
@@ -51,6 +59,14 @@ small {
   --tools-per-columns: 6;
   --doodle-underline-size: 30rem;
   --feature-padding: 2rem;
+}
+
+.dark {
+  --color-text: #{$slate-50};
+  --color-text-muted: #{$slate-300};
+  --color-background: #{$gray-800};
+  --color-background-muted: #{$gray-700};
+  --color-background-translucent: #{rgba($gray-800, 0.8)};
 }
 
 @media (max-width: 1280px) {

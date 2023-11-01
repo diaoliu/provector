@@ -18,7 +18,10 @@ const Header = () => {
         <a href={site.github}>Community</a>
         <AppLink />
       </nav>
-      <button onClick={() => setActive(!active)}>
+      <button
+        aria-label="Toggle mobile menu"
+        onClick={() => setActive(!active)}
+      >
         <i />
         <i />
         <i />

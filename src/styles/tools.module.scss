@@ -12,7 +12,7 @@
   justify-content: center;
   gap: 1rem;
   padding: 1.5rem 1rem;
-  background-color: var(--color-white);
+  background-color: var(--color-background);
   box-shadow: inset 0px 0px 0px 1px var(--color-border);
   border-radius: 1rem;
   text-align: center;
@@ -29,4 +29,8 @@
 .tools video {
   border-radius: 0.5rem;
   outline: 1px solid var(--color-border);
+  background-image: url(/screenshot.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  aspect-ratio: 1280 / 600;
 }

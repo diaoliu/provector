@@ -20,7 +20,7 @@
     position: relative;
     font-size: 1.125rem;
     font-weight: 400;
-    background-color: #f8f9fa;
+    background-color: var(--color-background-muted);
     border-radius: 1rem;
     padding: 1.5rem 4rem;
     width: 100%;
@@ -46,7 +46,7 @@
 
     &:hover,
     &:focus {
-      color: var(--color-white);
+      color: var(--color-background);
       background-color: var(--color-text);
     }
   }

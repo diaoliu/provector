@@ -14,6 +14,7 @@ import styles from "styles/index-page.module.scss";
 const IndexPage = () => (
   <div className={styles.indexPage}>
     <Head>
+      <title>{site.title}</title>
       <HeadMeta />
     </Head>
     <Header />
