@@ -1,6 +1,6 @@
 .buttons {
   display: grid;
-  grid-template-columns: repeat(var(--tools-per-columns), 1fr);
+  grid-template-columns: repeat(var(--tools-columns), 1fr);
   gap: 1rem;
   margin-bottom: 2rem;
 }

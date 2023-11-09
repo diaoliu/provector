@@ -47,7 +47,7 @@
     }
   }
 
-  & button {
+  & .menuButton {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 3px;
@@ -80,7 +80,7 @@
     }
   }
 
-  &.active button {
+  &.active .menuButton {
     transform: rotate(45deg);
 
     & i:nth-child(2),
@@ -97,8 +97,8 @@
 }
 
 @media (min-width: 640px) {
-  .header button,
-  .header nav.mobile {
+  .header nav.mobile,
+  .header .menuButton {
     display: none;
   }
 }

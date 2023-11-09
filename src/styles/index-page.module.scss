@@ -18,6 +18,13 @@
     margin: var(--section-margin) 0;
   }
 
+  & .sayHi {
+    text-align: center;
+    padding: 2rem;
+    background-color: var(--color-background-muted);
+    border-radius: 1rem;
+  }
+
   & main,
   & footer {
     max-width: 80rem;

@@ -1,5 +1,6 @@
 import Logo from "components/logo";
 import Head from "components/head";
+import Footer from "components/footer";
 import site from "shared/site";
 import useNextSeoProps from "hooks/use-next-seo-props";
 
@@ -12,7 +13,7 @@ const themeConfig = {
     link: site.github,
   },
   footer: {
-    text: <Logo copyright description={site.description} />,
+    text: <Footer />,
   },
 };
 

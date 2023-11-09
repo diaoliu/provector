@@ -23,5 +23,11 @@
   "export": "Export",
   "preferences": "Preferences",
   "tools": "Tools",
-  "keyboard-shortcuts": "Keyboard Shortcuts"
+  "keyboard-shortcuts": "Keyboard Shortcuts",
+  "-- Product": {
+    "type": "separator",
+    "title": "Product"
+  },
+  "about": "About",
+  "releases": "Releases"
 }

@@ -1,0 +1,16 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+
+  & nav {
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(var(--footer-links-columns), max-content);
+    gap: 2rem;
+  }
+}
+
+.copyright {
+  color: var(--color-text-muted);
+}

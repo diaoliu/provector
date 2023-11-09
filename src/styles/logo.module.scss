@@ -1,21 +1,10 @@
 .logo {
-  & .row {
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-  }
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
 
   & strong {
     font-size: 1.5rem;
     font-weight: 700;
-  }
-
-  & .copyright {
-    display: block;
-    margin: 1.5rem 0 0.5rem;
-  }
-
-  & small {
-    color: var(--color-text-muted);
   }
 }

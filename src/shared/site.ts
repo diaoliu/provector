@@ -6,7 +6,9 @@ const descriptions = [
 
 const site = {
   domain: "https://start.provector.app",
-  docs: "https://start.provector.app/docs",
+  learn: "https://start.provector.app/docs",
+  about: "https://start.provector.app/docs/about",
+  releases: "https://start.provector.app/docs/releases",
   title: "Provector | Online Vector Graphic Editor",
   descriptions,
   description: descriptions.join(""),
