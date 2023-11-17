@@ -8,6 +8,17 @@
     align-items: center;
     grid-template-columns: repeat(var(--footer-links-columns), max-content);
     gap: 2rem;
+
+    & .social {
+      display: flex;
+      align-items: center;
+      gap: 2rem;
+    }
+
+    & a {
+      display: flex;
+      align-items: center;
+    }
   }
 }
 

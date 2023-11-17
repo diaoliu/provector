@@ -5,11 +5,11 @@ import Banner from "components/banner";
 import Contact from "components/contact";
 import FAQs from "components/faqs";
 import Footer from "components/footer";
-import FooterLinks from "components/footer-links";
 import Features from "components/features";
 import Header from "components/header";
 import HeadMeta from "components/head";
 import Tools from "components/tools";
+import ThemeSwitch from "components/theme-switch";
 import ThemeContextProvider from "components/theme-context-provider";
 
 import styles from "styles/index-page.module.scss";
@@ -31,7 +31,7 @@ const IndexPage = () => (
       <footer>
         <Contact />
         <Footer>
-          <FooterLinks />
+          <ThemeSwitch />
         </Footer>
       </footer>
     </div>

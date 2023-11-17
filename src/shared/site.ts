@@ -13,6 +13,8 @@ const site = {
   descriptions,
   description: descriptions.join(""),
   github: "https://github.com/diaoliu/provector",
+  youtube: "https://www.youtube.com/@provectorapp",
+  twitter: "https://twitter.com/provectorapp",
   issues: "https://github.com/diaoliu/provector/issues",
   source: "https://github.com/diaoliu/provector/blob/main",
 };

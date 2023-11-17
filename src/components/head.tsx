@@ -10,6 +10,12 @@ const HeadMeta = () => (
     <meta property="og:image:height" content="630" />
     <meta property="og:url" content={site.domain} />
     <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@provectorapp" />
+    <meta name="twitter:creator" content="@provectorapp" />
+    <meta name="twitter:title" content={site.title} />
+    <meta name="twitter:description" content={site.description} />
+    <meta name="twitter:image" content={site.domain + "/social-cover.png"} />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
   </>
 );
