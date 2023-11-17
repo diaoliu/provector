@@ -1,5 +1,7 @@
 {
-  "index": "Introduction",
+  "about": "About",
+  "releases": "Releases",
+  "index": "Quick Start",
   "-- Objects": {
     "type": "separator",
     "title": "Objects"
@@ -23,11 +25,5 @@
   "export": "Export",
   "preferences": "Preferences",
   "tools": "Tools",
-  "keyboard-shortcuts": "Keyboard Shortcuts",
-  "-- Product": {
-    "type": "separator",
-    "title": "Product"
-  },
-  "about": "About",
-  "releases": "Releases"
+  "keyboard-shortcuts": "Keyboard Shortcuts"
 }
