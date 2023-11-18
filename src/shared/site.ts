@@ -13,6 +13,7 @@ const site = {
   descriptions,
   description: descriptions.join(""),
   github: "https://github.com/diaoliu/provector",
+  productHunt: "https://www.producthunt.com/products/provector",
   youtube: "https://www.youtube.com/@provectorapp",
   twitter: "https://twitter.com/provectorapp",
   issues: "https://github.com/diaoliu/provector/issues",
