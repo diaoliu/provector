@@ -32,7 +32,7 @@ const Features = () => (
       <Feature
         icon={mdiPaletteSwatchOutline}
         header="Styling"
-        content="Color Picker / Gradient / Eyedropper / Blend Modes / Opacity / Stroke
+        content="Color Picker / Gradient / Repeat Pattern / Eyedropper / Blend Modes / Opacity / Stroke
           Style"
       />
       <Feature
