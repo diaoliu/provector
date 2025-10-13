@@ -19,6 +19,25 @@ Provector is developed since 2021 as my first side project. As a designer and me
 
 If you have experiences with other vector drawing tools, like Adobe Illustrator or Figma, you will be able to start using Provector without any problems. You can also start with the documentations to learn Provector as beginner.
 
+## 🌍 Contributing Translations
+
+We’d love your help translating this project into more languages!
+
+All translation files are stored in **`src/i18n/`**, and each language has its own JSON file.
+The English version is used as the template:
+
+> 📄 `src/i18n/en.json`
+
+### 🧩 How to Contribute
+
+Duplicate the file `src/i18n/en.json` and rename it using your [language code](https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes), for example:
+
+```
+src/i18n/es.json   → Spanish
+src/i18n/fr.json   → French
+src/i18n/ja.json   → Japanese
+```
+
 ## 🎉 We appreciate your insights!
 
 - Does Provector effectively solve your pain points?
